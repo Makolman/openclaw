@@ -8,11 +8,10 @@ services:
       - key: PORT
         value: "8080"
       - key: SETUP_PASSWORD
-        sync: false
+        sync: false # Render te pedirá definir esta contraseña al desplegar
       - key: OPENCLAW_STATE_DIR
         value: /data/.openclaw
       - key: OPENCLAW_WORKSPACE_DIR
         value: /data/workspace
       - key: OPENCLAW_GATEWAY_TOKEN
-        generateValue: true
-
+        generateValue: true # Genera automáticamente un token seguro
